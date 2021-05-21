@@ -8,9 +8,18 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('dollar-sign.png') %>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700,800" rel="stylesheet">
+      <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    </link>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+      <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    </link>
   </head>
 
   <body>
-    <%= yield %>
+    <div class='page'>
+      <%= yield %>
+    </div>
   </body>
 </html>
