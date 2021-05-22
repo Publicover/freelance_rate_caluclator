@@ -145,4 +145,20 @@ html body{
     word-break: break-word !important;
     box-shadow: none !important;
   }
+  &:disabled {
+    border-width: 3px;
+    font-family: "Karla";
+    font-weight: bold;
+    font-size: 19px;
+    background-color: #7fdae0;
+    color: black;
+    border-color: #232020;
+    letter-spacing: 2px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-transform: uppercase;
+    word-break: break-word;
+  }
 }

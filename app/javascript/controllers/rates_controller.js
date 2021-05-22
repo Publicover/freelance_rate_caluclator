@@ -9,7 +9,6 @@ export default class extends Controller{
       currency: 'USD',
     });
     var dayRate = parseInt(this.rateTarget.value);
-    console.log(formatter.format(dayRate));
     this.outputTarget.textContent = `You should be charging ${formatter.format(dayRate / 80)} per day, aiming for 80 fully booked days. `;
   }
 }
