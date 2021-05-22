@@ -5,6 +5,6 @@ export default class extends Controller{
 
   calculate() {
     var hourlyRate = parseInt(this.rateTarget.value)
-    this.outputTarget.textContent = `You make ${hourlyRate + 10}.`;
+    this.outputTarget.textContent = `You are charging ${hourlyRate} when you should be charging ${hourlyRate + 10}.`;
   }
 }

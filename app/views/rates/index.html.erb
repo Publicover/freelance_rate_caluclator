@@ -1,8 +1,21 @@
-<div data-controller='rates'>
-  <input data-rates-target='rate' type='number' />
+<div class='middle' id='dash-title'>
+  <h1 class='middle'>
+    The Freelance Rate Generator
+  </h1>
+</div>
 
-  <button data-action='click->rates#calculate'>
-    CLICK
-  </button>
-  <span data-rates-target='output'>rates</span>
+<div class='middle' id='explanation'>
+  Enter your normal rate and we'll tell you what you SHOULD be charging.
+</div>
+
+<div class='page middle'>
+  <div data-controller='rates' id='rates-controller'>
+    <input data-rates-target='rate' type='number' id='rate-field'/>
+
+    <button data-action='click->rates#calculate' class='btn btn-primary' id='rate-button' disabled='disabled'>
+      CLICK
+    </button>
+    <br />
+    <span data-rates-target='output' class='middle' id='real-rate'></span>
+  </div>
 </div>
