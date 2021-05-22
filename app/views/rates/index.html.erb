@@ -1,21 +1,22 @@
-<div class='middle' id='dash-title'>
+<div id='dash-title'>
   <h1 class='middle'>
     The Freelance Rate Generator
   </h1>
 </div>
 
-<div class='middle' id='explanation'>
-  Enter your normal rate and we'll tell you what you SHOULD be charging.
+<div class='middle'>
+  <p>The biggest problem in freelancing is picking an equitable and accurate day rate.</p>
+</div>
+<div class='middle'>
+  <p>But we have your back. Enter your annual salary rate.</p>
 </div>
 
-<div class='page middle'>
-  <div data-controller='rates' id='rates-controller'>
-    <input data-rates-target='rate' type='number' id='rate-field'/>
+<div data-controller='rates' id='rates'>
+  <input data-rates-target='rate' type='number' id='rate-field'/>
 
-    <button data-action='click->rates#calculate' class='btn btn-primary' id='rate-button' disabled='disabled'>
-      CLICK
-    </button>
-    <br />
-    <span data-rates-target='output' class='middle' id='real-rate'></span>
-  </div>
+  <button data-action='click->rates#calculate' class='btn btn-primary' id='rate-button' disabled='disabled'>
+    CLICK
+  </button>
+  <br />
+  <div data-rates-target='output' id='real-rate'></div>
 </div>

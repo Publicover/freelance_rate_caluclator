@@ -4,7 +4,12 @@ export default class extends Controller{
   static targets = ["rate", "output"]
 
   calculate() {
-    var hourlyRate = parseInt(this.rateTarget.value)
-    this.outputTarget.textContent = `You are charging ${hourlyRate} when you should be charging ${hourlyRate + 10}.`;
+    var formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    });
+    var dayRate = parseInt(this.rateTarget.value);
+    console.log(formatter.format(dayRate));
+    this.outputTarget.textContent = `You should be charging ${formatter.format(dayRate / 80)} per day, aiming for 80 fully booked days. `;
   }
 }
