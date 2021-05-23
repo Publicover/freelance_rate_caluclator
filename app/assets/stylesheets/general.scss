@@ -27,10 +27,14 @@ html body{
   justify-content: center;
 }
 
+.explanation {
+  padding-top: 1em;
+}
 
 #dash-title > h1 {
   font-family: "Libre Baskerville" !important;
   text-align: center;
+  padding-top: 2em;
 }
 
 #real-rate {
@@ -144,4 +148,14 @@ html body{
     text-transform: uppercase;
     word-break: break-word;
   }
+}
+
+.henry {
+  font-size: 15em;
+  color: green;
+}
+
+.james {
+  font-size: 35em;
+  color: blue;
 }
